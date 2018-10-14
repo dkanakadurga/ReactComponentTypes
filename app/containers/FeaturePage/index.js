@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
 import H1 from 'components/H1';
+import WordAdder from 'components/WordAdder';
 import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
@@ -80,6 +81,9 @@ export default class FeaturePage extends React.Component {
             </p>
           </ListItem>
         </List>
+        <div>
+          <WordAdder words={['Test']}> </WordAdder>
+        </div>
       </div>
     );
   }
